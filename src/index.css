@@ -39,7 +39,7 @@ ol, ul {
 }
 
 .kbd-navigation .square:focus {
-  background: #ddd;
+  background: rgb(131, 63, 63);
 }
 
 .game {
