@@ -1,6 +1,6 @@
 body {
   
-  font: 14px 'Helvetica Neue',
+  font: 16px 'Helvetica Neue',
   sans-serif;
   margin: 20px;
 }
@@ -20,8 +20,8 @@ ol, ul {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: rgb(211, 247, 10);
+  border: 2px solid rgb(39, 15, 15);
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -39,7 +39,7 @@ ol, ul {
 }
 
 .kbd-navigation .square:focus {
-  background: #ddd;
+  background: rgb(131, 63, 63);
 }
 
 .game {
