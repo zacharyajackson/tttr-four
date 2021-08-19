@@ -2,6 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+function greeting() {
+  let message = 'Hello';
+  let sayHi = function hi() {
+    console.log(message);
+  };
+  sayHi();
+}
+
+greeting();
+let message = greeting();
+console.log(message, `because I'm feeling all alone...you can't see me ` && `is there anybody out there?`);
+
+if (message === `Hello`) {
+  greeting(` because I'm feeling all alone...you can't see me`);
+  console.log(`You can't see me as I did not eveluate as equal exactly as the initial setting of the message to Hello...`);
+}
+console.log(`because I'm feeling all alone...you can see me?`);
 
 function Square(props) {
   return (
