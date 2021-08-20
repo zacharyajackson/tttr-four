@@ -18,7 +18,13 @@ if (message === `Hello`) {
   greeting(` because I'm feeling all alone...you can't see me`);
   console.log(`You can't see me as I did not eveluate as equal exactly as the initial setting of the message to Hello...`);
 }
-console.log(`because I'm feeling all alone...you can see me?`);
+console.log(`because I'm feeling all alone...
+
+
+
+
+
+and I wanted you to see this...`);
 
 function Square(props) {
   return (
@@ -105,8 +111,11 @@ class Game4 extends React.Component {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
-
+    /**Dev wants to use this step parameter 
+     * that is not being read/used at all */
     const moves = history.map((step, move) => {
+      console.log(step);
+// null values set for now, but make new determination as to this value.
       const desc = move ?
         'Go to move #' + move :
         'Go to game start';
@@ -123,13 +132,26 @@ class Game4 extends React.Component {
     } else {
       status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
-
+/**Board style below are not finished, but the concept is for this style to affect the 
+onClick and on each step/move reflect the styles with the strings X O... */
     return (
       <div className="game">
         <div className="game-board">
           <Board
             squares={current.squares}
             onClick={i => this.handleClick(i)}
+            style={{
+              height: 100,
+              width: 100,
+              borderRadius: 50,
+              color: "#fff",
+              backgroundColor: "#333",
+              position: "absolute",
+              bottom: 100,
+              right: 100,
+              fontSize: 20,
+              cursor: "pointer"
+            }}
           />
         </div>
         <div className="game-info">
