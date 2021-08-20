@@ -1,12 +1,35 @@
 body {
-  
-  font: 16px 'Helvetica Neue',
+  font: 16px 'Ubuntu-light',
   sans-serif;
   margin: 20px;
+  background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+}
+
+p {
+  color: rgb(67, 124, 2);
+}
+
+h2 {
+ color: #FA8072; 
+}
+
+div{
+  /* The currentColor keyword for the color value, which means that the border will have the value of the respective div's color property */
+  border: 3px solid currentColor;
+}
+
+
+#div1{
+  color: rgb(33, 153, 33);
+}
+
+
+#div2{
+  color: rgb(0, 204, 255);
 }
 
 ol, ul {
-  padding-left: 30px;
+  padding-left: 60px;
 }
 
 .board-row:after {
@@ -19,40 +42,22 @@ ol, ul {
   margin-bottom: 10px;
 }
 
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
 .square {
   background: rgb(211, 247, 10);
   border: 2px solid rgb(39, 15, 15);
-  float: left;
+  float: center;
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
   height: 34px;
   margin-right: -1px;
   margin-top: -1px;
-  padding: 0;
+  padding: 1;
   text-align: center;
   width: 34px;
 }
-
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: rgb(131, 63, 63);
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
-}
-
-
-
-
-
-
