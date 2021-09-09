@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 function Greeting() {
+  let personal = {
+    firstName: "Jim",
+    lastName: "Cooper",
+    age: 18,
+    isAdult: true
+  };
+  personal.age = 29;
   let message = 'Hello';
   let sayHi = function hi() {
     console.log(message);
   };
-  sayHi();
+  sayHi(personal.message);
 }
+
 
 Greeting();
 let message = Greeting();
