@@ -169,6 +169,7 @@ class Game4 extends React.PureComponent {
 ReactDOM.render(<Game4 />, document.getElementById("root"));
 
 function calculateWinner(squares) {
+
   const lines = [
     [3, 4, 5],
     [6, 7, 8],
@@ -184,6 +185,8 @@ function calculateWinner(squares) {
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a];
     }
+    //...
+
   }
   return null;
 }
