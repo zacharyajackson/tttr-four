@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//import Instabug from 'instabug-reactnative';
+
+/**
+ * Note: There is dependencies for React Native deveopment. Instabug was the intention of the new feature here. 
+ */
 import './index.css';
 
 function Greeting() {
@@ -78,6 +83,9 @@ class Board extends React.PureComponent {
 
 class Game4 extends React.PureComponent {
   constructor(props) {
+    // 2. Initialize and configure Instabug in the constructor or componentWillMount
+    //Instabug.start('xxxxxxxxxxxxxxxxxxxx', [Instabug.invocationEvent.shake, Instabug.invocationEvent.screenshot]);
+    // Note: This app key string may need to be unique to you. 
     super(props);
     this.state = {
       history: [
